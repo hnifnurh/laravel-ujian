@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Login</title>
+    <title>Login Ujian</title>
 </head>
 <body>
-    <h2>Login</h2>
+    <h2>Selamat datang Di Page Ujian, Silahkan Login Dulu</h2>
 
     @if ($errors->any())
         <div style="color: red;">
@@ -18,7 +18,7 @@
     @endif
 
     <form action="{{ route('login.post') }}" method="POST">
-        @csrf
+    @csrf
         <label>Email:</label><br />
         <input type="email" name="email" required /><br /><br />
 

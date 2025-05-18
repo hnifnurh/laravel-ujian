@@ -5,6 +5,7 @@
     <title>Daftar Mata Kuliah yang Mengadakan Ujian</title>
 </head>
 <body>
+    <h1>Selamat Datang Bro {{ Auth::user()->name }}</h1>
     <h2>Daftar Mata Kuliah yang Mengadakan Ujian</h2>
 
     @foreach ($ujianList as $ujian)

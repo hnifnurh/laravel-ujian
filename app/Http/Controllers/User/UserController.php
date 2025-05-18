@@ -14,7 +14,12 @@ class UserController extends Controller
 {
     public function index()
     {
-        $ujianList = Ujian::with('matkul')->get();
+        $userId = Auth::id();
+
+        $ujianList = Ujian::whereDoesntHave('hasilUjians', function ($query) use ($userId) {
+            $query->where('user_id', $userId);
+        })->get();
+
         return view('user.index', compact('ujianList'));
     }
 
