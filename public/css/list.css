@@ -1,0 +1,157 @@
+/* Global Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #3f51b5;
+    margin-bottom: 30px;
+    position: relative;
+    animation: popIn 0.6s ease-out;
+}
+
+/* Create Exam Link */
+a[href*="create"] {
+    display: inline-block;
+    background: linear-gradient(45deg, #00bcd4, #2196f3);
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+    transition: all 0.3s ease;
+    margin: 0 auto 20px;
+    display: block;
+    width: fit-content;
+}
+
+a[href*="create"]:hover {
+    background: linear-gradient(45deg, #2196f3, #00bcd4);
+    transform: translateY(-3px);
+}
+
+/* Table Styles */
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeSlideIn 0.7s ease-in;
+    background: white;
+}
+
+thead {
+    background: linear-gradient(90deg, #7b1fa2, #9c27b0);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+/* Action Buttons */
+td a {
+    background: #ff9800;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 5px rgba(255, 152, 0, 0.3);
+}
+
+td a:hover {
+    background: #fb8c00;
+    transform: scale(1.05);
+}
+
+/* Flash Message */
+p[style*="color: green"] {
+    text-align: center;
+    background: #d0f8ce;
+    color: #256029 !important;
+    border: 1px solid #a5d6a7;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+    font-weight: 500;
+    animation: pulse 1.5s infinite alternate;
+}
+
+/* Dashboard Link */
+a[href*="dashboard"] {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #6a1b9a;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+a[href*="dashboard"]:hover {
+    color: #4a148c;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(46, 204, 113, 0.4);
+    }
+    to {
+        transform: scale(1.03);
+        box-shadow: 0 0 20px rgba(46, 204, 113, 0.6);
+    }
+}

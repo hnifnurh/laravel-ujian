@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Login Ujian</title>
+    <link rel="stylesheet" href="{{ asset('css/login-ujian.css') }}">
 </head>
 <body>
     <h2>Selamat datang Di Page Ujian, Silahkan Login Dulu</h2>

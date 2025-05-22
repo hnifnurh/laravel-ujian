@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Daftar Ujian</title>
+    <link rel="stylesheet" href="{{ asset('css/list.css') }}">
 </head>
 <body>
     <h2>Daftar Ujian</h2>

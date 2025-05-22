@@ -1,0 +1,105 @@
+/* Reset dan dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+/* Judul dashboard */
+h2 {
+    font-size: 2.5em;
+    color: #2a4365;
+    margin-bottom: 40px;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+/* List menu */
+ul {
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Link styling */
+ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #2b6cb0;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+ul li a:hover {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Tombol logout */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+form button {
+    background-color: #e53e3e;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #c53030;
+    transform: scale(1.05);
+}
+
+/* Animasi */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

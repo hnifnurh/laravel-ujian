@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="{{ asset('css/dashboard-ujian.css') }}">
 </head>
 <body>
     <h2>Dashboard Admin</h2>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Detail Mata Kuliah</title>
+    <link rel="stylesheet" href="{{ asset('css/detail.css') }}">
 </head>
 <body>
     <h2>Detail Mata Kuliah: {{ $ujian->nama_mata_kuliah }}</h2>

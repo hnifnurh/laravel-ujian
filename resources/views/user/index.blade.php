@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Daftar Mata Kuliah yang Mengadakan Ujian</title>
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 </head>
 <body>
     <h1>Selamat Datang Bro {{ Auth::user()->name }}</h1>

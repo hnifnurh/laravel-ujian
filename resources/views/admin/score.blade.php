@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Skor Ujian</title>
+    <link rel="stylesheet" href="{{ asset('css/score.css') }}">
 </head>
 <body>
     <h1>Daftar Nilai Semua Ujian</h1>
