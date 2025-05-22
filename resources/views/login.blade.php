@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{{ asset('css/login-ujian.css') }}">
     <title>Login Ujian</title>
 </head>
 <body>

@@ -2,25 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset('css/create-ujian.css') }}">
     <title>Buat Ujian</title>
-    <style>
-        .soal-group {
-            border: 1px solid #ccc;
-            margin-bottom: 15px;
-            padding: 10px;
-            position: relative;
-        }
-        .remove-btn {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            background: #f44336;
-            color: white;
-            border: none;
-            padding: 4px 8px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
     <h2>{{ isset($ujian) ? 'Edit Ujian' : 'Buat Ujian Baru' }}</h2>

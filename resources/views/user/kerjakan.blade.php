@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/kerjakan.css') }}">
     <title>Ujian: {{ $ujian->judul }}</title>
     <script>
         let totalSeconds = {{ ($ujian->waktu_ujian ?? 30) * 60 }}; // default 30 menit
