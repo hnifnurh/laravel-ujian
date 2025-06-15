@@ -34,12 +34,12 @@ composer install
    APP_DEBUG=true
    APP_URL=http://localhost
 
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=ujian
-    DB_USERNAME=root
-    DB_PASSWORD=
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=ujian
+   DB_USERNAME=root
+   DB_PASSWORD=
     
    DB_USERS_CONNECTION=mysql
    DB_USERS_HOST=127.0.0.1
