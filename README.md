@@ -1,4 +1,4 @@
-# Sistem Absensi
+# Sistem Ujian
 
 The application uses **Laravel** for the backend, **MySQL** for the database, and **PHP** with **Javascript** for the frontend.
 
